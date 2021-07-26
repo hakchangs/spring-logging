@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: user_route
+        uri: http://localhost:8001
+        predicates:
+        - Path=/user/**
+        filters:
+        - StripPrefix=1
+
+server:
+  port: 80
