@@ -6,6 +6,7 @@
     <modules>
         <module>boot-tomcat-logging</module>
         <module>scg-logging</module>
+        <module>logging-core</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -31,17 +32,5 @@
             <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
 </project>

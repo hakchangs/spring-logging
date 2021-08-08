@@ -1,5 +1,13 @@
 server:
   port: 8001
   tomcat:
+    basedir: ./.tomcat
     accesslog:
       enabled: true
+      #tomcat pattern - https://tomcat.apache.org/tomcat-8.0-doc/config/valve.html#Access_Log_Valve
+      pattern: common
+
+#logging:
+#  level:
+#    root: INFO
+#    org.example.tomcat.web: DEBUG

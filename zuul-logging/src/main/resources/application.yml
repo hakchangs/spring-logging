@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    user-service:
+      service-id: user-service
+      path: /user/**
+      url: http://localhost:8001
+      strip-prefix: true
+
+server:
+  port: 80
